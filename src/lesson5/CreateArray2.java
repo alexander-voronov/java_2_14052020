@@ -36,7 +36,7 @@ public class CreateArray2 {
             @Override
             public synchronized void run() {
                 for (int i = 0; i < h; i++) {
-                    arr2[i] = (float) (arr2[i] * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
+                    arr2[i] = (float) (arr2[i] * Math.sin(0.2f + (h + i) / 5) * Math.cos(0.2f + (h + i) / 5) * Math.cos(0.4f + (h + i) / 2));
                 }
             }
         }
@@ -58,7 +58,6 @@ public class CreateArray2 {
         System.currentTimeMillis();
 
         System.out.println(System.currentTimeMillis() - a);
-
 
 
     }
